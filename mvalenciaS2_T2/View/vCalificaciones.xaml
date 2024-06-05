@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mvalenciaS2_T2.View.vCalificaciones"
+             Title="vCalificaciones">
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Margin="20">
+        <Label 
+            Text="SISTEMA DE CALIFICACIONES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Red"
+            FontSize="15"/>
+        <Label 
+            Text="PRIMER PARCIAL"
+            FontSize="10"
+            TextColor="Red"/>
+        <Picker x:Name="pkEstudiantes">
+            <Picker.Items>
+                <x:String>Mario</x:String>
+                <x:String>Edgar</x:String>
+                <x:String>Andres</x:String>
+                <x:String>Andrea</x:String>
+                <x:String>Angela</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry x:Name="txtN1"
+               Placeholder="Ingrese Nota Sequimiento 1"
+               Keyboard="Numeric"
+               MaxLength="4"/>
+        <Entry x:Name="txtE1"
+               Placeholder="Ingrese Nota de Examen 1"
+               Keyboard="Numeric"
+               MaxLength="4"/>
+        <Label
+            Text="SEGUNDO PARCIAL"
+            FontSize="10"
+            TextColor="Red"/>
+        <Entry x:Name="txtN2"
+              Placeholder="Ingrese Nota Sequimiento 1"
+            Keyboard="Numeric"
+            MaxLength="4"/>
+        <Entry x:Name="txtE2"
+            Placeholder="Ingrese Nota de Examen 1"
+            Keyboard="Numeric"
+            MaxLength="4"/>
+        <DatePicker x:Name="dtpFecha"
+                    Format="MM/dd/aaaa">
+        </DatePicker>
+            <Button x:Name="btnCalcular"
+                Text="Calcular"
+                Clicked="btnCalcular_Clicked"
+                HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
