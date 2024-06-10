@@ -11,7 +11,7 @@
             HorizontalOptions="Center" 
             TextColor="Red"
             FontSize="15"/>
-        <Label 
+        <Label
             Text="PRIMER PARCIAL"
             FontSize="10"
             TextColor="Red"/>
@@ -32,7 +32,11 @@
                Placeholder="Ingrese Nota de Examen 1"
                Keyboard="Numeric"
                MaxLength="4"/>
-        <Label
+            <Label x:Name="np1"
+                Text="NOTA PRIMER PARCIAL:"
+                FontSize="10"
+                TextColor="Green"/>
+            <Label            
             Text="SEGUNDO PARCIAL"
             FontSize="10"
             TextColor="Red"/>
@@ -44,9 +48,17 @@
             Placeholder="Ingrese Nota de Examen 1"
             Keyboard="Numeric"
             MaxLength="4"/>
+            <Label x:Name="np2"
+    Text="NOTA SEGUNDO PARCIAL:"
+    FontSize="10"
+    TextColor="Green"/>
         <DatePicker x:Name="dtpFecha"
                     Format="MM/dd/aaaa">
         </DatePicker>
+            <Label x:Name="lblTotal"
+    Text="NOTA TOTAL:"
+    FontSize="10"
+    TextColor="Green"/>
             <Button x:Name="btnCalcular"
                 Text="Calcular"
                 Clicked="btnCalcular_Clicked"
